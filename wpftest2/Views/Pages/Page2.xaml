@@ -1,0 +1,26 @@
+﻿<Page x:Class="wpftest2.Views.Pages.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:wpftest2.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+
+    <Grid Background="White">
+        <StackPanel Width="150" Height="200" VerticalAlignment="Top" HorizontalAlignment="Left"> 
+        <CheckBox Content="CheckBox"  Name="checkBox1" IsThreeState="False" IsChecked="False" Height="20" />
+        <CheckBox Content="1" Name="checkBox2" IsThreeState="False" IsChecked="False" Height="20" />
+        <CheckBox Content="2" Name="checkBox3" IsThreeState="False" IsChecked="False" Height="20" />
+        </StackPanel>
+        <StackPanel Width="150" Height="200" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <RadioButton Content="c#" GroupName="12" IsChecked="True"/>
+            <RadioButton Content="java" GroupName="11"/>
+            <RadioButton Content="puton" GroupName="12"/>
+            <RadioButton Content="c++" GroupName="11"/>
+        </StackPanel>
+        <Button Content="Назад" Height="50" Width="200" VerticalAlignment="Bottom" Click="Button_Click"/>
+
+    </Grid>
+</Page>
